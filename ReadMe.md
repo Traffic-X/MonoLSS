@@ -5,7 +5,7 @@ This repo is the implementation of the following paper:
 
 >  MonoLSS: Learnable Sample Selection For Monocular 3D Detection  
 >  Zhenjia Li*, Jinrang Jia*, Yifeng shi   
->  International Conference on 3D Vision 2024 (3DV), 2024  
+>  Accepted by International Conference on 3D Vision 2024 (3DV), 2024  
 >  *arXiv report ([arXiv 2312.14474](https://arxiv.org/abs/2312.14474))*     
 
 
