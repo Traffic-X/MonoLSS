@@ -1,0 +1,51 @@
+
+# MonoLSS
+Learnable Sample Selection For Monocular 3D Detection
+
+
+![](readme/fig1.png)
+
+> [**Monolss**](https://arxiv.org/abs/2312.14474)  
+> lizhenjia*, jiajinrang*, shiyifeng  
+>  *arXiv technical report ([arXiv 2312.14474](https://arxiv.org/abs/2312.14474))*     
+
+
+## Abstract 
+In the field of autonomous driving, monocular 3D detection is a critical task which estimates 3D properties (depth, dimension, and orientation) of objects in a single RGB image. Previous works have used features in a heuristic way to learn 3D properties, without considering that inappropriate features could have adverse effects. In this paper, sample selection is introduced that only suitable samples should be trained to regress the 3D properties. To select samples adaptively, we propose a Learnable Sample Selection (LSS) module, which is based on Gumbel-Softmax and a relative-distance sample divider. The LSS module works under a warm-up strategy leading to an improvement in training stability. Additionally, since the LSS module dedicated to 3D property sample selection relies on object-level features, we further develop a data augmentation method named MixUp3D to enrich 3D property samples which conforms to imaging principles without introducing ambiguity. As two orthogonal methods, the LSS module and MixUp3D can be utilized independently or in conjunction. Sufficient experiments have shown that their combined use can lead to synergistic effects, yielding improvements that transcend the mere sum of their individual applications. Leveraging the LSS module and the MixUp3D, without any extra data, our method named MonoLSS ranks 1st in all three categories (Car, Cyclist, and Pedestrian) on KITTI 3D object detection benchmark, and achieves competitive results on both the Waymo dataset and KITTI-nuScenes cross-dataset evaluation. The code is included in the supplementary material and will be released to facilitate related academic and industrial studies.
+
+## Main results
+![](readme/fig2.png)
+
+
+## Installation
+Download the KITTI dataset from [**KITTI website**](https://www.cvlibs.net/datasets/kitti/index.php)
+
+Install the following environments:
+~~~
+python 3.7
+torch 1.3.1
+torchvision 0.4.2
+~~~
+
+## Eval
+Download the checkpoint from [**here**](https://pan.baidu.com/s/1C77fRo7FMeYtmKKcwXOtlQ?pwd=8848)
+~~~
+python tools/train_val.py -t
+~~~
+
+## Train
+~~~
+python tools/train_val.py
+~~~
+
+## citation
+~~~
+@article{li2023monolss,   
+  title={MonoLSS: Learnable Sample Selection For Monocular 3D Detection},  
+  author={Li, Zhenjia and Jia, Jinrang and Shi, Yifeng},  
+  journal={arXiv preprint arXiv:2312.14474},  
+  year={2023}  
+}
+~~~
+## Acknowledgements
+This respository is mainly based on [**GUPNET**](https://github.com/SuperMHP/GUPNet/tree/main) and [**DID-M3d**](https://github.com/SPengLiang/DID-M3D)
