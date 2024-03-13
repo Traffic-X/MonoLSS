@@ -40,11 +40,13 @@ python tools/train_val.py
 
 ## citation
 ~~~
-@article{li2023monolss,   
-  title={MonoLSS: Learnable Sample Selection For Monocular 3D Detection},  
-  author={Li, Zhenjia and Jia, Jinrang and Shi, Yifeng},  
-  journal={arXiv preprint arXiv:2312.14474},  
-  year={2023}  
+@misc{li2023monolss,
+      title={MonoLSS: Learnable Sample Selection For Monocular 3D Detection}, 
+      author={Zhenjia Li and Jinrang Jia and Yifeng Shi},
+      year={2023},
+      eprint={2312.14474},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
 }
 ~~~
 ## Acknowledgements
