@@ -1,13 +1,13 @@
 
-# MonoLSS: Learnable Sample Selection For Monocular 3D Detection
+## MonoLSS: Learnable Sample Selection For Monocular 3D Detection
+
+[![PWC](https://img.shields.io/badge/Ranked_%231-KITTI_3D_Detection_Benchmark-blue)](https://www.cvlibs.net/datasets/kitti/eval_object_detail.php?&result=32b0d0ffead5dbff9672ec7808b0631448b7adee)
+
+:fire::fire:**[3DV 2024]** The official implementation of the paper "[MonoLSS: Learnable Sample Selection For Monocular 3D Detection](https://arxiv.org/abs/2312.14474)"
+
+:fire::fire:|[Paper](https://arxiv.org/abs/2312.14474) | [MonoLSS知乎解读](https://zhuanlan.zhihu.com/p/674862695) | [MonoLSS微信解读](https://mp.weixin.qq.com/s/NpLjZT2yuiV-dhIyTcdYRw)
+
 ![](readme/fig1.png)
-This repo is the implementation of the following paper:  
-
->  MonoLSS: Learnable Sample Selection For Monocular 3D Detection  
->  Zhenjia Li*, Jinrang Jia*, Yifeng shi   
->  Accepted by International Conference on 3D Vision 2024 (3DV), 2024  
->  *arXiv report ([arXiv 2312.14474](https://arxiv.org/abs/2312.14474))*     
-
 
 ## Abstract 
 
@@ -16,7 +16,6 @@ In the field of autonomous driving, monocular 3D detection is a critical task wh
 
 ## Main results
 ![](readme/fig2.png)
-
 
 ## Installation
 Download the KITTI dataset from [**KITTI website**](https://www.cvlibs.net/datasets/kitti/index.php)
