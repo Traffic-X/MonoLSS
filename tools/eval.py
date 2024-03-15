@@ -1275,7 +1275,7 @@ def eval_from_scrach(gt_dir, det_dir, eval_cls_list=None, ap_mode=40):
     all_gt, all_det = [], []
     all_f = sorted(os.listdir(det_dir))
     for i, f in enumerate(tqdm(all_f)):
-        gt_f = np.loadtxt(os.path.join(gt_dir, f), dtype=str)[:,:-1].reshape(-1, 15)
+        gt_f = np.loadtxt(os.path.join(gt_dir, f), dtype=str).reshape(-1, 15)
         det_f = np.loadtxt(os.path.join(det_dir, f), dtype=str).reshape(-1, 16)
 
         gt = {}
