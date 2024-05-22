@@ -130,6 +130,7 @@ class KITTI(data.Dataset):
             while count_num < 50:
                 count_num += 1
                 random_index = np.random.randint(len(self.idx_list))
+                random_index = int(self.idx_list[random_index])
                 calib_temp = self.get_calib(random_index)
                 
                 if calib_temp.cu == calib.cu and calib_temp.cv == calib.cv and calib_temp.fu == calib.fu and calib_temp.fv == calib.fv:
