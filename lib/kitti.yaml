@@ -1,8 +1,8 @@
 dataset:
   type: 'kitti'
-  data_dir: '/root/jiajinrang/kitti'
+  data_dir: '/root/kitti'
   root_dir: '/'
-  label_dir: '/root/jiajinrang/kitti/training/label_2'
+  label_dir: '/root/kitti/training/label_2'
   eval_cls: ['Car']
 #  eval_cls: ['Car','Pedestrian','Cyclist']
   batch_size: 16
