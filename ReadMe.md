@@ -22,13 +22,22 @@ Download the KITTI dataset from [**KITTI website**](https://www.cvlibs.net/datas
 The directory will be as follows:
 your_kitti_data  
     ├── ImageSets  
+
     ├── testing
+
         ├── calib
+
         ├── image_2
+
     ├── training
+
         ├── calib
+
         ├── image_2
+
         ├── label_2
+
+        
 Write the path to "data_dir" and "label_dir" in lib/kitti.yaml.
 
 ## Installation
