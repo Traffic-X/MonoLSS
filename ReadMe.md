@@ -49,7 +49,7 @@ torchvision 0.4.2
 ~~~
 
 ## Eval
-Download the checkpoint from [**here**](https://pan.baidu.com/s/1C77fRo7FMeYtmKKcwXOtlQ?pwd=8848)
+Download the checkpoint from [**Baidu**](https://pan.baidu.com/s/1C77fRo7FMeYtmKKcwXOtlQ?pwd=8848) or [**Google Drive**](https://drive.google.com/file/d/1Stoum9XZQIjUgLxNDZQqK6WuzSfxYpEK/view?usp=sharing)
 ~~~
 python tools/train_val.py -t
 ~~~
