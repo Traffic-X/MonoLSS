@@ -5,7 +5,7 @@
 
 :fire::fire:**[3DV 2024]** The official implementation of the paper "[MonoLSS: Learnable Sample Selection For Monocular 3D Detection](https://arxiv.org/abs/2312.14474)"
 
-:fire::fire:|[Paper](https://arxiv.org/abs/2312.14474) | [MonoLSS知乎解读](https://zhuanlan.zhihu.com/p/674862695) | [MonoLSS微信解读](https://mp.weixin.qq.com/s/NpLjZT2yuiV-dhIyTcdYRw)
+:fire::fire:| [Paper](https://arxiv.org/abs/2312.14474) | [MonoLSS知乎解读](https://zhuanlan.zhihu.com/p/674862695) | [MonoLSS微信解读](https://mp.weixin.qq.com/s/NpLjZT2yuiV-dhIyTcdYRw)
 
 ![](readme/fig1.png)
 
@@ -17,9 +17,21 @@ In the field of autonomous driving, monocular 3D detection is a critical task wh
 ## Main results
 ![](readme/fig2.png)
 
-## Installation
+## Dataset
 Download the KITTI dataset from [**KITTI website**](https://www.cvlibs.net/datasets/kitti/index.php)
+The directory will be as follows:
+your_kitti_data  
+    ├── ImageSets  
+    ├── testing
+        ├── calib
+        ├── image_2
+    ├── training
+        ├── calib
+        ├── image_2
+        ├── label_2
+Write the path to "data_dir" and "label_dir" in lib/kitti.yaml.
 
+## Installation
 Install the following environments:
 ~~~
 python 3.7
@@ -37,6 +49,8 @@ python tools/train_val.py -t
 ~~~
 python tools/train_val.py
 ~~~
+
+The default lib/kitti.yaml is for train in trainval split and test in KITTI web. 
 
 ## citation
 ~~~
